@@ -116,53 +116,9 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 
 
 
- Video from A to Z:
-  - Thanks to [Wiszky](https://github.com/vishnoe115)
- <p><a href="https://youtu.be/IUmq1paCiHI"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
+ 
 
-### 1. Installing requirements
-
-- Clone this repo:
-```
-git clone https://github.com/arshsisodiya/helios-mirror mirrorbot/ && cd mirrorbot
-```
-- For Debian based distros
-```
-sudo apt install python3 python3-pip
-```
-Install Docker by following the [official Docker docs](https://docs.docker.com/engine/install/debian/)
-
-- For Arch and it's derivatives:
-```
-sudo pacman -S docker python
-```
-- Install dependencies for running setup scripts:
-```
-pip3 install -r requirements-cli.txt
-```
-
-------
-
-### 2. Setting up config file
-
-```
-cp config_sample.env config.env
-```
-- Remove the first line saying:
-```
-_____REMOVE_THIS_LINE_____=True
-```
-Fill up rest of the fields. Meaning of each field is discussed below:
-
-**1. Required Fields**
-
-- `BOT_TOKEN`: The Telegram Bot Token that you got from [@BotFather](https://t.me/BotFather). `Str`
-- `GDRIVE_FOLDER_ID`: This is the Folder/TeamDrive ID of the Google Drive Folder or `root` to which you want to upload all the mirrors. `Str`
-- `OWNER_ID`: The Telegram User ID (not username) of the Owner of the bot. `Int`
-- `DOWNLOAD_DIR`: The path to the local folder where the downloads should be downloaded to. `Str`
-- `DOWNLOAD_STATUS_UPDATE_INTERVAL`: Time in seconds after which the progress/status message will be updated. Recommended `10` seconds at least. `Int`
-- `AUTO_DELETE_MESSAGE_DURATION`: Interval of time (in seconds), after which the bot deletes it's message and command message which is expected to be viewed instantly. **NOTE**: Set to `-1` to disable auto message deletion. `Int`
-- `AUTO_DELETE_UPLOAD_MESSAGE_DURATION`: Interval of time (in seconds), after which the bot deletes it's message and command message which is expected to be viewed instantly. **NOTE**: Set to `-1` to disable auto upload message deletion. `Int`
+ION`: Interval of time (in seconds), after which the bot deletes it's message and command message which is expected to be viewed instantly. **NOTE**: Set to `-1` to disable auto upload message deletion. `Int`
 - `TELEGRAM_API`: This is to authenticate your Telegram account for downloading Telegram files. You can get this from https://my.telegram.org. `Int`
 - `TELEGRAM_HASH`: This is to authenticate your Telegram account for downloading Telegram files. You can get this from https://my.telegram.org. `Str`
 
@@ -170,7 +126,7 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `BOT_PM`: - set it`True` if you want to send mirror links and leeched files in user's PM, Default is `False`.
 - `FORCE_BOT_PM`: - set it `True` if True all mirrored links and leeched files will be send directly in PM, Mirrored links will not get sent in Current chat and source message will be deleted immediately after mirror/leech is complete, AUTO_DELETE_UPLOAD_MESSAGE_DURATION will not apply on it.
 - `IS_TEAM_DRIVE`: Set `True` if uploading to TeamDrive. Default is `False`. `Bool`
-- `DATABASE_URL`: Your SQL Database URL. Follow this [Generate Database](https://github.com/arshsisodiya/helios-mirror/tree/master#generate-database) to generate database. Data will be saved in Database: auth and sudo users, leech settings including thumbnails for each user, rss data and incomplete tasks. **NOTE**: If deploying on heroku and using heroku postgresql delete this variable from **config.env** file. **DATABASE_URL** will be grabbed from heroku variables. `Str`
+- `DATABASE_URL`: Your SQL Database URL. Follow this [Generate Database](https://github.com/PrincesssGirlXD/stableleech/tree/master#generate-database) to generate database. Data will be saved in Database: auth and sudo users, leech settings including thumbnails for each user, rss data and incomplete tasks. **NOTE**: If deploying on heroku and using heroku postgresql delete this variable from **config.env** file. **DATABASE_URL** will be grabbed from heroku variables. `Str`
 - `AUTHORIZED_CHATS`: Fill user_id and chat_id of groups/users you want to authorize. Separate them by space. `Str`
 - `SUDO_USERS`: Fill user_id of users whom you want to give sudo permission. Separate them by space. `Str`
 - `IGNORE_PENDING_REQUESTS`: Ignore pending requests after restart. Default is `False`. `Bool`
