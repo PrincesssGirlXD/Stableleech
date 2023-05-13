@@ -5,7 +5,7 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 ## If you Like My work Star the repo and Follow me on Github
 
 # Features:
-## By [Arsh](https://github.com/arshsisodiya)
+## By [The Immortal](https://github.com/PrincesssGirlXD)
 - Mirror logs
 - Leech logs
 - Source link button
@@ -23,8 +23,7 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 - FORCE BOT PM
 - Change Start buttons from config.env
 - And many more little changes can't remember
-## By [anasty17](https://github.com/anasty17)
-In each single file there is a major change from base code, it's almost totaly different. Here some of features and fixes that I remember.
+
 ### qBittorrent
 - Qbittorrent support
 - Select files from Torrent before and while downloading
@@ -113,11 +112,11 @@ In each single file there is a major change from base code, it's almost totaly d
 - Direct links Supported:
   >mediafire, letsupload.io, hxfile.co, anonfiles.com, bayfiles.com, antfiles, fembed.com, fembed.net, femax20.com, layarkacaxxi.icu, fcdn.stream, sbplay.org, naniplay.com, naniplay.nanime.in, naniplay.nanime.biz, sbembed.com, streamtape.com, streamsb.net, feurl.com, upload.ee, pixeldrain.com, racaty.net, 1fichier.com, 1drv.ms (Only works for file not folder or business account), uptobox.com and solidfiles.com
 
-# How to deploy?
 
-## Prerequisites
 
-- Tutorial Video from A to Z:
+
+
+ Video from A to Z:
   - Thanks to [Wiszky](https://github.com/vishnoe115)
  <p><a href="https://youtu.be/IUmq1paCiHI"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
